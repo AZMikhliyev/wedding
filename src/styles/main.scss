@@ -1,0 +1,102 @@
+@import "./reset";
+@import "./variables";
+@import "../assets/fonts/fonts";
+
+body {
+  background: #000;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //   overflow-x: hidden;
+  main {
+    width: 100%;
+    max-width: 310px;
+    display: flex;
+    justify-content: center;
+    .container {
+      width: 100%;
+      max-width: 310px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .wedding-ring {
+        width: 375px;
+        height: 250px;
+        object-fit: cover;
+        object-position: bottom;
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        gap: 191px;
+        padding: 25px 18px;
+        border-radius: 25px;
+        backdrop-filter: blur(30px);
+        box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.2);
+        background: linear-gradient(
+          156deg,
+          rgba(217, 217, 217, 0.4) 0%,
+          rgba(115, 115, 115, 0.4) 100%
+        );
+        h1,
+        h2 {
+          max-width: 274px;
+          color: #fff;
+          text-align: center;
+          text-transform: uppercase;
+          font-style: bold;
+          overlay: auto;
+        }
+        h1 {
+          font-weight: 400;
+          font-size: 36px;
+          letter-spacing: 0.05em;
+        }
+        .content-bottom {
+          display: flex;
+          flex-direction: column;
+          gap: 27px;
+          h2 {
+            font-size: 16px;
+            font-weight: 900;
+            font-size: 16px;
+          }
+          .js-content {
+            width: 100%;
+            max-width: 375px;
+            display: flex;
+            align-items: center;
+            // justify-content: center;
+            position: relative;
+            .draggable {
+              width: 30px;
+              height: 30px;
+              background-color: white;
+              border-radius: 50%;
+              position: absolute;
+              left: 0;
+              cursor: grab;
+            }
+        
+            .target {
+              width: 60px;
+              height: 60px;
+              border: 2px solid white;
+              border-radius: 50%;
+              position: absolute;
+              right: 0;
+            }
+            .arrow {
+              width: 215px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Marck+Script&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", serif;
+}
+
+h1 {
+  font-family: "Marck Script", sans-serif;
+}
+
+body {
+  background: #000;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper main {
+  width: 100%;
+  max-width: 310px;
+  display: flex;
+  justify-content: center;
+}
+.wrapper main .container {
+  width: 100%;
+  max-width: 310px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper main .container .wedding-ring {
+  width: 375px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.wrapper main .container .card {
+  display: flex;
+  flex-direction: column;
+  gap: 191px;
+  padding: 25px 18px;
+  border-radius: 25px;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(156deg, rgba(217, 217, 217, 0.4) 0%, rgba(115, 115, 115, 0.4) 100%);
+}
+.wrapper main .container .card h1,
+.wrapper main .container .card h2 {
+  max-width: 274px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: bold;
+  overlay: auto;
+}
+.wrapper main .container .card h1 {
+  font-weight: 400;
+  font-size: 36px;
+  letter-spacing: 0.05em;
+}
+.wrapper main .container .card .content-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+.wrapper main .container .card .content-bottom h2 {
+  font-size: 16px;
+  font-weight: 900;
+  font-size: 16px;
+}
+.wrapper main .container .card .content-bottom .js-content {
+  width: 100%;
+  max-width: 375px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.wrapper main .container .card .content-bottom .js-content .draggable {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  cursor: grab;
+}
+.wrapper main .container .card .content-bottom .js-content .target {
+  width: 60px;
+  height: 60px;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+}
+.wrapper main .container .card .content-bottom .js-content .arrow {
+  width: 215px;
+}/*# sourceMappingURL=main.css.map */

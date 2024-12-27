@@ -1,0 +1,170 @@
+@import url(../../styles/_reset.scss);
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Marck+Script&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #84aeb2;
+  font-family: "Inter", sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Marck Script", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  //   max-width: 375px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 50px;
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .main-section {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .main-content {
+        width: 100%;
+        max-width: 313px;
+        height: 448px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../../assets/img/rect.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        h1 {
+        }
+      }
+    }
+    .second-section {
+      width: 100%;
+      margin-bottom: 47px;
+      .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 118px;
+        .lemon {
+          margin-top: 20px;
+          position: absolute;
+          left: 0;
+        }
+        p {
+          max-width: 257px;
+          font-style: bold;
+          font-weight: 700;
+          font-size: 16px;
+          text-align: center;
+          color: #382d2d;
+        }
+      }
+    }
+    .images {
+      position: relative;
+      .kalendar {
+        width: 234px;
+        height: 234px;
+      }
+      .grape {
+        position: absolute;
+        right: -70px;
+        bottom: -113px;
+      }
+      margin-bottom: 150px;
+    }
+    .third-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      backdrop-filter: blur(10px);
+      background: rgba(217, 217, 217, 0.4);
+      padding: 40px 29px;
+      border-radius: 25px;
+      margin-bottom: 95px;
+    }
+    .fourth-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 47px;
+      h1 {
+        margin-bottom: 74px;
+      }
+      .content {
+        margin-bottom: 20px;
+        p {
+          text-align: center;
+        }
+      }
+    }
+    .fifth-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 47px;
+      h1 {
+        text-align: center;
+      }
+      p {
+        width: 250px;
+        text-align: center;
+      }
+
+      .red {
+        position: absolute;
+        right: 0;
+      }
+      .green {
+        position: absolute;
+        left: 0;
+      }
+    }
+    .sixth-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      #countdown {
+        margin-top: 15px;
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+        .timing {
+          width: 75px;
+          height: 75px;
+          border-radius: 100%;
+          border: 2px solid #000;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          font-weight: 400;
+          font-size: 16px;
+          text-align: center;
+          color: #000;
+        }
+      }
+    }
+  }
+}
