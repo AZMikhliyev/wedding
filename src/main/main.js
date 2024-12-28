@@ -28,3 +28,17 @@ const countdown = setInterval(() => {
     document.getElementById("countdown").textContent = "Time's up!";
   }
 }, 1000);
+
+
+const playPauseButton = document.getElementById("playPauseButton");
+const audioPlayer = document.getElementById("audioPlayer");
+
+playPauseButton.addEventListener("click", () => {
+  if (audioPlayer.paused) {
+    audioPlayer.play();
+    playPauseButton.textContent = "Pause";
+  } else {
+    audioPlayer.pause();
+    playPauseButton.textContent = "Play";
+  }
+});
